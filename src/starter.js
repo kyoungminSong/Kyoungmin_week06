@@ -36,7 +36,7 @@ const angleScale = d3
   .range([0, 2 * Math.PI]);
 
 //color
-const pointColor = "white";
+const pointColor = "#42e695";
 
 // line radial
 const radarLine = d3
@@ -72,7 +72,8 @@ d3.json("data/fifa23_maleplayers.json").then((raw_data) => {
     .attr("cx", 0)
     .attr("cy", 0)
     .attr("r", (d) => radiusScale(d))
-    .attr("fill", "rgba(10,10,10,0.01)")
+    .attr("fill", "white")
+    .attr("fill-opacity", 0.03)
     .attr("stroke", "white")
     .attr("stroke-opacity", 0.3)
     .attr("stroke-width", 0.5);
@@ -100,7 +101,7 @@ d3.json("data/fifa23_maleplayers.json").then((raw_data) => {
     .text((d) => d)
     .attr("class", "labels")
     .attr("fill", "white")
-    .attr("fill-opacity", 0.7);
+    .attr("fill-opacity", 0.5);
 
   path = g
     .append("path")
@@ -108,8 +109,8 @@ d3.json("data/fifa23_maleplayers.json").then((raw_data) => {
     .attr("d", radarLine)
     .attr("fill", pointColor)
     .attr("stroke", pointColor)
-    .attr("stroke-width", 1.3)
-    .style("fill-opacity", 0.2);
+    .attr("stroke-width", 1.5)
+    .style("fill-opacity", 0.25);
 });
 
 ////// function

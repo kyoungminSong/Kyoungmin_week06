@@ -20,7 +20,7 @@
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 32px;
   width: 100%;
   /* border-top: 1px solid #333;
   border-bottom: 1px solid #333; */
@@ -29,7 +29,8 @@ h1 {
   margin-bottom: 29px;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
+  letter-spacing: 2px;
+  color: rgb(232, 232, 232);
 }
 
 #player-name {
@@ -40,14 +41,14 @@ h1 {
 }
 
 #options {
-  color: #666;
-  border: 1px solid #3c3c3c;
-  background-color: #322b2b;
+  color: rgb(181, 181, 181);
+  border: 1px solid gray;
+  background-color: rgba(255, 255, 255, 0.3);
   outline: 0;
 }
 
 .options-label {
-  color: #888;
+  color: rgb(180, 180, 180);
   margin-right: 6px;
   font-size: 15px;
   font-style: italic;
